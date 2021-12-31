@@ -22,7 +22,7 @@ if (splitIndex >= 0) {
   envArgs = process.argv;
 }
 
-yargs(envArgs.slice(2))
+const { argv } = yargs(envArgs.slice(2))
   .demandCommand()
   .command(
     'export <prefixPaths..>',
@@ -134,3 +134,7 @@ yargs(envArgs.slice(2))
       execEnv(x, execArgs);
     }
   );
+
+if (argv) {
+  // console.log(argv);
+}

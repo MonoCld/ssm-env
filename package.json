@@ -1,6 +1,6 @@
 {
-  "name": "@monocld/ssm-env",
-  "version": "1.0.0",
+  "name": "@monocloud/ssm-env",
+  "version": "1.0.3",
   "description": "Get your environment variables from SSM",
   "keywords": [
     "ssm",
@@ -19,7 +19,6 @@
   "license": "MIT",
   "author": "Vishal Rastogi",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "cli.js"
