@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "isolatedModules": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "outDir": "./dist",
+        "module": "commonjs",
+        "lib": [
+            "esnext"
+        ],
+        "baseUrl": "./",
+        "target": "es2018",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "sourceMap": true,
+    },
+    "exclude": [
+        "node_modules",
+        ".yarn"
+    ],
+    "include": [
+        "./src/**/*.ts"
+    ]
+}

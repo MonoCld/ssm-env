@@ -1,0 +1,60 @@
+{
+  "name": "@monocld/ssm-env",
+  "version": "1.0.0",
+  "description": "Get your environment variables from SSM",
+  "keywords": [
+    "ssm",
+    "env",
+    "environment",
+    "variables"
+  ],
+  "homepage": "https://github.com/monocld/ssm-env#readme",
+  "bugs": {
+    "url": "https://github.com/monocld/ssm-env/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monocld/ssm-env.git"
+  },
+  "license": "MIT",
+  "author": "Vishal Rastogi",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "cli.js"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc -p .",
+    "lint:es": "eslint --cache . --fix --quiet",
+    "lint:ts": "tsc",
+    "lint": "npm run lint:es && npm run lint:ts"
+  },
+  "dependencies": {
+    "aws-sdk": "2.1048.0",
+    "cross-env": "7.0.3",
+    "dotenv": "10.0.0",
+    "yargs": "17.3.1"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "6.0.2",
+    "@types/node": "17.0.5",
+    "@types/yargs": "17.0.8",
+    "@typescript-eslint/eslint-plugin": "5.8.1",
+    "@typescript-eslint/parser": "5.8.1",
+    "eslint": "8.5.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "16.1.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-prettier": "4.0.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.5.1",
+    "ts-node": "10.4.0",
+    "typescript": "4.5.4"
+  },
+  "bin": {
+    "ssm-env": "./cli.js"
+  }
+}
