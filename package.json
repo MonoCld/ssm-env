@@ -1,7 +1,7 @@
 {
   "name": "@monocloud/ssm-env",
-  "version": "1.0.3",
-  "description": "Get your environment variables from SSM",
+  "version": "1.0.4",
+  "description": "Get your environment variables from SSM (Original credit to https://github.com/mschnee/ssm-env)",
   "keywords": [
     "ssm",
     "env",
