@@ -33,9 +33,7 @@ const { argv } = yargs(envArgs.slice(2))
         .option('awsDefaultRegion', {
           type: 'string',
           default:
-            process.env.AWS_DEFAULT_REGION ||
-            dotenvFile.AWS_DEFAULT_REGION ||
-            'us-east-1',
+            process.env.AWS_REGION || dotenvFile.AWS_REGION || 'us-east-1',
         })
         .option('awsAccessKeyId', {
           type: 'string',
@@ -87,9 +85,7 @@ const { argv } = yargs(envArgs.slice(2))
         .option('awsDefaultRegion', {
           type: 'string',
           default:
-            process.env.AWS_DEFAULT_REGION ||
-            dotenvFile.AWS_DEFAULT_REGION ||
-            'us-east-1',
+            process.env.AWS_REGION || dotenvFile.AWS_REGION || 'us-east-1',
         })
         .option('awsAccessKeyId', {
           type: 'string',
